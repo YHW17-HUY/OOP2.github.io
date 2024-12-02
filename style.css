@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-flow: row; /* Hiển thị các phần tử con theo hàng ngang */
+  align-items: center;
+  justify-content: center; /* Tạo khoảng cách đều giữa các phần tử */
+  background-color: rgb(238, 234, 234);
+  width: 100%; /* Đảm bảo container bao phủ chiều rộng mong muốn */
+  padding: 10px; /* Tạo một chút không gian bên trong */
+  border-radius: 20px;
+}
+
+.countries {
+  display: flex;
+  font-size: 2rem;
+  opacity: 0;
+  transition: opacity 1s;
+  position: relative;
+}
+
+.country {
+  border-radius: 10px;
+  border: solid black 2px;
+  margin: 0 20px;
+  background-color: white;
+}
+.country__img {
+  width: 100%;
+}
+
+/* Khoảng cách cụ thể giữa các phần tử */
+.container > * {
+  margin: 0 10px; /* Điều chỉnh khoảng cách giữa các item */
+}
+.neighbour {
+  background-color: #f0f0f0;
+
+  transform: scale(0.8); /* Giảm kích thước quốc gia láng giềng */
+  transition: transform 0.3s ease-in-out;
+}
+.btn-country {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #03f568;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #7dd56f;
+}
